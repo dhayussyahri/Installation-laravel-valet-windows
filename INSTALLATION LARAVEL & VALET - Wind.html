@@ -1,0 +1,49 @@
+INSTALLATION LARAVEL & VALET - Windows
+
+
+INSTALLATION LARAVEL WINDOWS
+
+1. Download XAMPP Versi terbaru & install
+2. Download composer Versi terbaru & install
+3. Open Gitbash / terminal ( Copy dan paste )
+	- composer global require laravel/installer
+4. Masuk ke "Advance System Setting"
+	- Environment Variable
+	- Klik path 
+	- Tambahkan : %USERPROFILE%\AppData\Roaming\Composer\vendor\bin
+5. Coba buat project baru dengan command 
+	- Laravel new project
+
+INSTALLATION VALET 
+1. Masuk ke folder c/Users/.../AppsData/Roaming/Composer
+2. Hapus File composer.json & composer.lock
+3. copy n paste ke gitbash / terminal 
+	- composer global require cretueusebiu/valet-windows
+	-Tunggu hingga selesai installation
+4. Ketikan command :
+	- Vallet install
+	- klick yes semua
+5. pilih folder yang akan menjadi valet park / tempat application laravel
+6. Ketikan command :
+	- Valet park
+
+Change Adapter setting dns, untuk menggunakan .test :
+
+1. masuk ke more setting wifi
+2. Pilih Hadware Properties
+3. Pilih More Adapter options ( Klik edit )
+4. Pilih "Internet Protocol Version 4 (TCP/IPv4)"
+5. Ubah "Use the following DNS Server Address" menjadi 127.0.0.1
+6. Pilih "Internet Protocol Version 6 (TCP/IPv6)"
+6. Ubah "Use the following DNS Server Address" menjadi ::1
+
+
+Setting Xampp / Change port :
+1. Buka Xampp 
+2. pilih config lalu cari "Apache(httpd.config)
+3. ctrl + f , find 80
+4. lalu ganti menjadi :  Listen 12.34.56.78:8080
+5. lalu dibawahnya ganti : Listen 8080
+
+
+DONE LARAVEL & VALET FOR WINDOWS SIAP DIGUNAKAN
